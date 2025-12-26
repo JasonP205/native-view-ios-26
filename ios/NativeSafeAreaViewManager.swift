@@ -12,8 +12,4 @@ class NativeSafeAreaViewManager: RCTViewManager {
     override static func requiresMainQueueSetup() -> Bool {
         return true
     }
-    
-    @objc func setShowBlur(_ view: NativeSafeAreaView, showBlur: Bool) {
-        view.setShowBlur(showBlur)
-    }
 }

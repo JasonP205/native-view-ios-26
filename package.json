@@ -1,6 +1,6 @@
 {
   "name": "native-view-ios-26",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Native iOS Safe Area module for React Native with Swift bridge",
   "main": "index.js",
   "types": "index.d.ts",

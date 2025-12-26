@@ -4,6 +4,11 @@
 
 RCT_EXPORT_VIEW_PROPERTY(showBlur, BOOL)
 
++ (BOOL)requiresMainQueueSetup
+{
+  return YES;
+}
+
 @end
 
 @interface RCT_EXTERN_MODULE(NativeSafeAreaScrollViewManager, RCTViewManager)
@@ -12,5 +17,10 @@ RCT_EXPORT_VIEW_PROPERTY(showBlur, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(scrollEnabled, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(showsVerticalScrollIndicator, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(showsHorizontalScrollIndicator, BOOL)
+
++ (BOOL)requiresMainQueueSetup
+{
+  return YES;
+}
 
 @end
