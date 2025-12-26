@@ -1,0 +1,43 @@
+{
+  "name": "native-view-ios-26",
+  "version": "1.0.0",
+  "description": "Native iOS Safe Area module for React Native with Swift bridge",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "safe-area",
+    "insets",
+    "swift",
+    "native-module",
+    "blur-effect"
+  ],
+  "author": "Jason Phan",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.73.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonP205/native-view-ios-26.git"
+  },
+  "files": [
+    "ios",
+    "index.js",
+    "index.d.ts",
+    "components.ts",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native": "index.js"
+}

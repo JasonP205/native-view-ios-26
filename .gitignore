@@ -1,0 +1,23 @@
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# iOS
+ios/Pods/
+ios/.xcode.env.local
+*.xcworkspace
+*.xcuserdata
+
+# macOS
+.DS_Store
+
+# Build
+lib/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
