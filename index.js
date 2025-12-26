@@ -50,4 +50,4 @@ const NativeViewIOS26 = {
 export default NativeViewIOS26;
 
 // Export components
-export { NativeSafeAreaView, NativeSafeAreaScrollView } from './components.ts';
+export { NativeSafeAreaView, NativeSafeAreaScrollView } from './components';

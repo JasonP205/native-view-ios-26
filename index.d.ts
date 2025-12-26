@@ -1,4 +1,4 @@
-import { ComponentType } from 'react';
+import * as React from 'react';
 import { ViewProps, ViewStyle } from 'react-native';
 
 export interface SafeAreaInsets {
@@ -29,7 +29,7 @@ declare const NativeViewIOS26: NativeViewIOS26;
 
 export default NativeViewIOS26;
 
-// Native Components
+// Native Components Props
 export interface NativeSafeAreaViewProps extends ViewProps {
   /**
    * Whether to show blur effect under status bar
@@ -65,6 +65,7 @@ export interface NativeSafeAreaScrollViewProps extends ViewProps {
   children?: React.ReactNode;
 }
 
-export const NativeSafeAreaView: ComponentType<NativeSafeAreaViewProps>;
-export const NativeSafeAreaScrollView: ComponentType<NativeSafeAreaScrollViewProps>;
+// Component exports
+export const NativeSafeAreaView: React.FC<NativeSafeAreaViewProps>;
+export const NativeSafeAreaScrollView: React.FC<NativeSafeAreaScrollViewProps>;
 

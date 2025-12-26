@@ -1,15 +1,10 @@
 import React from 'react';
-import { requireNativeComponent, ViewProps, ViewStyle } from 'react-native';
+import { requireNativeComponent } from 'react-native';
 
 // Native View Component
-interface NativeSafeAreaViewProps extends ViewProps {
-  showBlur?: boolean;
-  style?: ViewStyle;
-}
+const RNNativeSafeAreaView = requireNativeComponent('NativeSafeAreaView');
 
-const RNNativeSafeAreaView = requireNativeComponent<NativeSafeAreaViewProps>('NativeSafeAreaView');
-
-export const NativeSafeAreaView: React.FC<NativeSafeAreaViewProps> = ({ 
+export const NativeSafeAreaView = ({ 
   showBlur = true,
   children,
   style,
@@ -23,17 +18,9 @@ export const NativeSafeAreaView: React.FC<NativeSafeAreaViewProps> = ({
 };
 
 // Native ScrollView Component
-interface NativeSafeAreaScrollViewProps extends ViewProps {
-  showBlur?: boolean;
-  scrollEnabled?: boolean;
-  showsVerticalScrollIndicator?: boolean;
-  showsHorizontalScrollIndicator?: boolean;
-  style?: ViewStyle;
-}
+const RNNativeSafeAreaScrollView = requireNativeComponent('NativeSafeAreaScrollView');
 
-const RNNativeSafeAreaScrollView = requireNativeComponent<NativeSafeAreaScrollViewProps>('NativeSafeAreaScrollView');
-
-export const NativeSafeAreaScrollView: React.FC<NativeSafeAreaScrollViewProps> = ({ 
+export const NativeSafeAreaScrollView = ({ 
   showBlur = true,
   scrollEnabled = true,
   showsVerticalScrollIndicator = true,
