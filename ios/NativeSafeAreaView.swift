@@ -28,7 +28,7 @@ class NativeSafeAreaView: UIView {
         addSubview(contentView)
         
         setupBlurEffect()
-        updateConstraints()
+        setupConstraints()
         
         // Listen for safe area changes
         if #available(iOS 11.0, *) {
@@ -62,7 +62,7 @@ class NativeSafeAreaView: UIView {
         ])
     }
     
-    private func updateConstraints() {
+    private func setupConstraints() {
         NSLayoutConstraint.activate([
             contentView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             contentView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
